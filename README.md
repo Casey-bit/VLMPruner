@@ -8,8 +8,10 @@ The usage is coming soon in December 2025!
 - `2025/12/02`: VLM-Pruner has been submitted to Arxiv, see [here](https://arxiv.org/abs/2512.02700). 
 
 ## 👀 Overview
-![intro1](./fig/fig_intro1.png){width=50%}
-![intro2](./fig/fig_intro2.png){width=50%}
+![intro1](./fig/fig_intro1.png)
+
+![intro2](./fig/fig_intro2.png)
+
 ![model](./fig/model.png)
 
 ## 🌟 Citation
