@@ -8,9 +8,8 @@ The usage is coming soon in December 2025!
 - `2025/12/02`: VLM-Pruner has been submitted to Arxiv, see [here](https://arxiv.org/abs/2512.02700). 
 
 ## 👀 Overview
-![intro1](./fig/fig_intro1.png)
-
-![intro2](./fig/fig_intro2.png)
+![intro1](./fig/fig_intro.png)
+Figure 1. Comparisons between baselines and VLM-Pruner. Left: Visual question answering examples with correct (green) and incorrect (red) responses; numbers (from 1 to 64) denote token selection order. Right: VLM-Pruner consistenly outperformes baselines across five VLMs.
 
 ![model](./fig/model.png)
 
