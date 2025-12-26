@@ -1,5 +1,21 @@
 # VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm
 
+## Authors:
+- **Zhenkai Wu**<sup>1,2</sup>† 
+- **Xiaowen Ma**<sup>2</sup>†
+- **Zhenliang Ni**<sup>2</sup>
+- **Dengming Zhang**<sup>1,2</sup>
+- **Han Shu**<sup>2</sup>
+- **Xin Jiang**<sup>2</sup>
+- **Xinghao Chen**<sup>2</sup>‡
+
+† Equal contribution  
+‡ Corresponding author: [xinghao.chen@huawei.com](mailto:xinghao.chen@huawei.com)
+
+## Affiliations:
+1. Zhejiang University  
+2. Huawei Noah's Ark Lab
+
 ## Note
 The usage is coming soon in December 2025!
 
