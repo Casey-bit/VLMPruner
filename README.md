@@ -11,11 +11,11 @@
 **Xin Jiang**<sup>2</sup> &nbsp;
 **Xinghao Chen**<sup>2</sup><sup>✉</sup>
 
-<sup>1</sup> Zhejiang University  
-<sup>2</sup> Huawei Noah’s Ark Lab  
+<sup>1</sup> Zhejiang University  <sup>2</sup> Huawei Noah’s Ark Lab  
 
 <sup>†</sup> Equal contribution.  
-<sup>✉</sup> Corresponding author: xinghao.chen@huawei.com
+<sup>✉</sup> Corresponding author: xinghao.chen@huawei.com.
+
 <sup>📕</sup> Arxiv version: [here](https://arxiv.org/abs/2512.02700).
 </div>
 
