@@ -36,7 +36,7 @@ The usage is coming soon in December 2025!
 
 ./VLMPruner/Qwen2-VL/Qwen2VL_VLMPruner/modeling_qwen2_vl_self.py
     └── class VLMPruner(Qwen2VLModel)
-'''
+```
 
 ## 👀 Overview
 ![intro1](./fig/fig_intro.png)
