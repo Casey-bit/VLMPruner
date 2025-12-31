@@ -19,15 +19,24 @@
 <sup>📕</sup> Arxiv version: [here](https://arxiv.org/abs/2512.02700).
 </div>
 
-
-
-
 ## Note
 The usage is coming soon in December 2025!
 
 ## 🔥 News
 - `2025/12/15`: The official implementation of VLM-Pruner is available!
 - `2025/12/02`: VLM-Pruner has been submitted to Arxiv, see [here](https://arxiv.org/abs/2512.02700). 
+
+## 🔧 Preparation
+### LLaVA-1.5-7b/13b
+```shell
+conda create -n VLMPruner python=3.10 -y
+conda activate VLMPruner
+pip install -e .
+pip install flash-attn --no-build-isolation --no-cache-dir
+pip install accelerate deepspeed --upgrade
+pip install protobuf
+pip install transformers_stream_generator
+```
 
 ## 💻Core Codes
 ```text
