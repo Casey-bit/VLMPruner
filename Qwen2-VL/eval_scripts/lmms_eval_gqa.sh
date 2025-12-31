@@ -13,14 +13,11 @@ model_name="Qwen2-VL-7B-Instruct"
 output_path="./logs/${model_name}/${task}/"
 mkdir -p "$output_path"
 
-Sparse=$1
-pruned_layer=$2
-image_token_start_index=0
-image_token_length=0
-max_num_trunction=64
-reduction_ratio=$3
+pruned_layer=2
+reduction_ratio=$1
 pivot_image_token=4
-pivot_text_token=4
+threshold=$2
+token_batch=$3
 
 
 python3 -m accelerate.commands.launch \
@@ -28,7 +25,7 @@ python3 -m accelerate.commands.launch \
     --main_process_port 50008 \
     -m lmms_eval \
     --model qwen2_vl \
-    --model_args pretrained=$model_id,max_pixels=1003520,device_map=cuda,use_flash_attention_2=False,Sparse=$Sparse,pruned_layer=$pruned_layer,image_token_start_index=$image_token_start_index,image_token_length=$image_token_length,max_num_trunction=$max_num_trunction,reduction_ratio=$reduction_ratio,pivot_image_token=$pivot_image_token,pivot_text_token=$pivot_text_token \
+    --model_args pretrained=$model_id,max_pixels=1003520,device_map=cuda,use_flash_attention_2=False,Sparse=True,pruned_layer=$pruned_layer,reduction_ratio=$reduction_ratio,pivot_image_token=$pivot_image_token,threshold=$threshold,token_batch=$token_batch \
     --tasks gqa \
     --batch_size 1 \
     --log_samples \
