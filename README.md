@@ -40,13 +40,17 @@ pip install transformers_stream_generator
 ```
 2.Download Multimodal Benchmarks
 
-Please follow the detailed instruction in [LLaVA-Evaluation](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md):
+(1) Please follow the detailed instruction in [LLaVA-Evaluation](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md):
 
-(1) Please download [eval.zip](https://drive.google.com/file/d/1atZSBBrAX54yYpxtVVW33zFvcnaHeFPy/view?usp=sharing) and extract it to ./playground/data/eval.
+Please download [eval.zip](https://drive.google.com/file/d/1atZSBBrAX54yYpxtVVW33zFvcnaHeFPy/view?usp=sharing) and extract it to ./playground/data/eval.
     
-(2) Please download benchmarks including GQA, ScienceQA, TextVQA, POPE, MME, MMBench, and SEED-Bench.
+Please download benchmarks including GQA, ScienceQA, TextVQA, POPE, MME, MMBench, and SEED-Bench.
 
-Please refer to [OCRBench](https://github.com/Yuliang-Liu/MultimodalOCR/tree/main/OCRBench). Download [OCRBench Images](https://drive.google.com/file/d/1a3VRJx3V3SdOmPr7499Ky0Ug8AwqGUHO/view?usp=drive_link) and [OCRBench json](https://github.com/Yuliang-Liu/MultimodalOCR/blob/main/OCRBench/OCRBench/OCRBench.json). Extract them to ./playground/data/eval/OCRBench/OCRBench_Images and ./playground/data/eval/OCRBench/OCRBench/OCRBench.json respectively.
+(2) Please refer to [OCRBench](https://github.com/Yuliang-Liu/MultimodalOCR/tree/main/OCRBench) to download OCRBench.
+
+Download [OCRBench Images](https://drive.google.com/file/d/1a3VRJx3V3SdOmPr7499Ky0Ug8AwqGUHO/view?usp=drive_link) and [OCRBench json](https://github.com/Yuliang-Liu/MultimodalOCR/blob/main/OCRBench/OCRBench/OCRBench.json). 
+
+Extract them to ./playground/data/eval/OCRBench/OCRBench_Images and ./playground/data/eval/OCRBench/OCRBench/OCRBench.json, respectively.
 
 ## 💻Core Codes
 ```text
