@@ -13,7 +13,7 @@ from tqdm import tqdm
 from transformers import AutoProcessor, AutoTokenizer
 import sys
 sys.path.append('../../../Qwen2-VL/')
-from Qwen2VL_DART import Qwen2VLForConditionalGeneration
+from Qwen2VL_VLMPruner import Qwen2VLForConditionalGeneration
 
 from lmms_eval import utils
 from lmms_eval.api.instance import Instance
@@ -27,13 +27,13 @@ except ImportError:
     eval_logger.warning("Failed to import qwen_vl_utils; Please install it via `pip install qwen-vl-utils`")
 
 
-def configure_DART(model, config):
+def configure_VLMPruner(model, config):
 
     if config['Sparse']:
-        model.config.DART_config = config
+        model.config.VLMPruner_config = config
 
     else:
-        model.config.DART_config = None
+        model.config.VLMPruner_config = None
 
 
 @register_model("qwen2_vl")
@@ -60,12 +60,10 @@ class Qwen2_VL(lmms):
         attn_implementation="flash_attention_2",
         Sparse=True,
         pruned_layer=2,
-        image_token_start_index=0,
-        image_token_length=0,
-        max_num_trunction=0,
         reduction_ratio=0.778,
         pivot_image_token=4,
-        pivot_text_token=4,
+        threshold=0.8,
+        token_batch=16,
         **kwargs,
     ) -> None:
         super().__init__()
@@ -99,17 +97,19 @@ class Qwen2_VL(lmms):
         self.max_num_frames = max_num_frames
         self._tokenizer = AutoTokenizer.from_pretrained(pretrained)
 
-        DART_config = {
+        VLMPruner_config = {
             "Sparse": Sparse,
             "K": pruned_layer,
-            "image_token_start_index": image_token_start_index,
-            "image_token_length": image_token_length,
-            "max_num_trunction": max_num_trunction,
+            "image_token_start_index": 0,
+            "image_token_length": 0,
             "reduction_ratio": reduction_ratio,
             "pivot_image_token": pivot_image_token,
-            "pivot_text_token": pivot_text_token,
+            "threshold": threshold,
+            "token_batch": token_batch,
+            "height": 0,
+            "weight": 0,
         }
-        configure_DART(self._model, DART_config) # HACK
+        configure_VLMPruner(self._model, VLMPruner_config) # HACK
 
         self._config = self._model.config
         self.batch_size_per_gpu = int(batch_size)
@@ -184,7 +184,7 @@ class Qwen2_VL(lmms):
                 new_list.append(j)
         return new_list
 
-    def generate_until(self, requests: List[Instance]) -> List[str]:
+def generate_until(self, requests: List[Instance]) -> List[str]:
         res = []
 
         def _collate(x):
@@ -276,6 +276,7 @@ class Qwen2_VL(lmms):
 
             texts = [self.processor.apply_chat_template(msg, tokenize=False, add_generation_prompt=True) for msg in messages]
             image_inputs, video_inputs = process_vision_info(messages)
+
             if video_inputs is not None:
                 total_frames = video_inputs[0].shape[0]
                 indices = np.linspace(0, total_frames - 1, self.max_num_frames, dtype=int)
@@ -301,13 +302,15 @@ class Qwen2_VL(lmms):
 
             pad_token_id = self.tokenizer.pad_token_id
 
-            if self.config.DART_config is not None:
+            if self.config.VLMPruner_config is not None:
                 # HACK
                 image_token_start_index = inputs.input_ids.tolist()[0].index(151655)
                 image_token_end_index = inputs.input_ids.tolist()[0].index(151653)
                 image_token_length = image_token_end_index - image_token_start_index
-                self.config.DART_config['image_token_start_index'] = image_token_start_index
-                self.config.DART_config['image_token_length'] = image_token_length
+                self.config.VLMPruner_config['image_token_start_index'] = image_token_start_index
+                self.config.VLMPruner_config['image_token_length'] = image_token_length
+                self.config.VLMPruner_config['height'] = inputs["image_grid_thw"][0][1]
+                self.config.VLMPruner_config['width'] = inputs["image_grid_thw"][0][2]
                 # HACK
 
             cont = self.model.generate(
