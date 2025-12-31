@@ -39,11 +39,11 @@ pip install protobuf
 pip install transformers_stream_generator
 ```
 2.Download Multimodal Benchmarks
-```shell
+
 Please follow the detailed instruction in [LLaVA-Evaluation](https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md).
     └── Please download [eval.zip](https://drive.google.com/file/d/1atZSBBrAX54yYpxtVVW33zFvcnaHeFPy/view?usp=sharing) and extract it to ./playground/data/eval.
     └── Please download benchmarks including GQA, ScienceQA, TextVQA, POPE, MME, MMBench, and SEED-Bench.
-```
+
 
 ## 💻Core Codes
 ```text
