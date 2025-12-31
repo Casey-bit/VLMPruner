@@ -20,7 +20,7 @@
 </div>
 
 ## 🔥 News
-- `2025/12/31`: The instructions for the usage of this repository have been updated.
+- `2025/12/31`: The instructions for the usage of this repository with **LLaVA-1.5-7b/13b** and **Qwen2-VL-7B** have been updated.
 - `2025/12/15`: The official implementation of VLM-Pruner is available!
 - `2025/12/02`: VLM-Pruner has been submitted to Arxiv, see [here](https://arxiv.org/abs/2512.02700). 
 
