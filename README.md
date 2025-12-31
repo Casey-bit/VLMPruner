@@ -28,6 +28,7 @@ The usage is coming soon in December 2025!
 
 ## 🔧 Preparation
 ### LLaVA-1.5-7b/13b
+1.Environment Setup
 ```shell
 conda create -n VLMPruner python=3.10 -y
 conda activate VLMPruner
@@ -37,6 +38,8 @@ pip install accelerate deepspeed --upgrade
 pip install protobuf
 pip install transformers_stream_generator
 ```
+2.Download Multimodal Benchmarks
+Please follow the detailed instruction in [LLaVA-Evaluation]{https://github.com/haotian-liu/LLaVA/blob/main/docs/Evaluation.md}.
 
 ## 💻Core Codes
 ```text
