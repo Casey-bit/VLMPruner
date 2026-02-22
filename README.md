@@ -1,6 +1,6 @@
 <div align="center">
 
-# VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm
+# VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm (CVPR26)
 
 **Zhenkai Wu**<sup>1,2</sup><sup>†</sup> &nbsp;
 **Xiaowen Ma**<sup>2</sup><sup>†</sup> &nbsp;
