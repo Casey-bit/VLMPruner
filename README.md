@@ -1,6 +1,6 @@
 <div align="center">
 
-# VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm (CVPR2026)
+# VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm (CVPR 2026)
 
 **Zhenkai Wu**<sup>1,2</sup><sup>†</sup> &nbsp;
 **Xiaowen Ma**<sup>2</sup><sup>†</sup> &nbsp;
@@ -20,7 +20,7 @@
 </div>
 
 ## 🔥 News
-- `2026/02/21`: Our VLM-Pruner is accepted at **CVPR2026** main!
+- `2026/02/21`: Our VLM-Pruner is accepted at **CVPR 2026** main!
 - `2025/12/31`: The instructions for the usage of this repository with `LLaVA-1.5-7b/13b` and `Qwen2-VL-7B` have been updated.
 - `2025/12/15`: The official implementation of VLM-Pruner is available!
 - `2025/12/02`: VLM-Pruner has been submitted to Arxiv, see [here](https://arxiv.org/abs/2512.02700). 
