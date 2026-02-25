@@ -11,7 +11,7 @@
 **Xin Jiang**<sup>2</sup> &nbsp;
 **Xinghao Chen**<sup>2</sup><sup>✉</sup>
 
-<sup>1</sup> Zhejiang University  <sup>2</sup> Huawei Noah’s Ark Lab  
+<sup>1</sup> Zhejiang University  <sup>2</sup> Huawei Technologies  
 
 <sup>†</sup> Equal contribution.  
 <sup>✉</sup> Corresponding author: xinghao.chen@huawei.com.
@@ -136,6 +136,8 @@ If you are interested in our work, please consider giving a 🌟 and citing our 
 If you are confused about the content of our paper or look forward to further academic exchanges and cooperation, please do not hesitate to contact us. The e-mail address is zkwu@zju.edu.cn. We look forward to hearing from you!
 
 ## 💡 Acknowledgement
+
+We are grateful to the CVPR 2026 reviewers for their constructive feedback!
 
 Thanks to previous open-sourced repo:
 
