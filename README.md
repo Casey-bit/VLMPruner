@@ -4,7 +4,7 @@
 
 **Zhenkai Wu**<sup>1,2</sup><sup>†</sup> &nbsp;
 **Xiaowen Ma**<sup>2</sup><sup>†</sup> &nbsp;
-**Zhenliang Ni**<sup>2</sup>  
+**Zhenliang Ni**<sup>2</sup><sup>✉</sup>  
 
 **Dengming Zhang**<sup>1,2</sup> &nbsp;
 **Han Shu**<sup>2</sup> &nbsp;
@@ -14,7 +14,7 @@
 <sup>1</sup> Zhejiang University  <sup>2</sup> Huawei Technologies  
 
 <sup>†</sup> Equal contribution.  
-<sup>✉</sup> Corresponding author: xinghao.chen@huawei.com.
+<sup>✉</sup> Corresponding authors: nizhenliang2@huawei.com; xinghao.chen@huawei.com.
 
 <sup>📕</sup> Arxiv version: [here](https://arxiv.org/abs/2512.02700).
 </div>
