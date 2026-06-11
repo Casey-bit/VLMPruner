@@ -16,11 +16,11 @@
 <sup>†</sup> Equal contribution.  
 <sup>✉</sup> Corresponding authors: nizhenliang2@huawei.com; xinghao.chen@huawei.com.
 
-<sup>📕</sup> Final version: [here](https://arxiv.org/abs/2512.02700](https://openaccess.thecvf.com/content/CVPR2026/html/Wu_VLM-Pruner_Buffering_for_Spatial_Sparsity_in_an_Efficient_VLM_Centrifugal_CVPR_2026_paper.html).
+<sup>📕</sup> Final version: [here](https://openaccess.thecvf.com/content/CVPR2026/html/Wu_VLM-Pruner_Buffering_for_Spatial_Sparsity_in_an_Efficient_VLM_Centrifugal_CVPR_2026_paper.html).
 </div>
 
 ## 🔥 News
-- `2026/06/10`: Our VLM-Pruner has been published on the [CVPR official website](https://arxiv.org/abs/2512.02700](https://openaccess.thecvf.com/content/CVPR2026/html/Wu_VLM-Pruner_Buffering_for_Spatial_Sparsity_in_an_Efficient_VLM_Centrifugal_CVPR_2026_paper.html).
+- `2026/06/10`: Our VLM-Pruner has been published on the [CVPR official website](https://openaccess.thecvf.com/content/CVPR2026/html/Wu_VLM-Pruner_Buffering_for_Spatial_Sparsity_in_an_Efficient_VLM_Centrifugal_CVPR_2026_paper.html).
 - `2026/02/21`: Our VLM-Pruner is accepted at **CVPR 2026** main!
 - `2025/12/31`: The instructions for the usage of this repository with `LLaVA-1.5-7b/13b` and `Qwen2-VL-7B` have been updated.
 - `2025/12/15`: The official implementation of VLM-Pruner is available!
