@@ -16,7 +16,7 @@
 <sup>†</sup> Equal contribution.  
 <sup>✉</sup> Corresponding authors: nizhenliang2@huawei.com; xinghao.chen@huawei.com.
 
-<sup>📕</sup> Arxiv version: [here](https://arxiv.org/abs/2512.02700).
+<sup>📕</sup> Final version: [here]([https://arxiv.org/abs/2512.02700](https://openaccess.thecvf.com/content/CVPR2026/html/Wu_VLM-Pruner_Buffering_for_Spatial_Sparsity_in_an_Efficient_VLM_Centrifugal_CVPR_2026_paper.html)).
 </div>
 
 ## 🔥 News
