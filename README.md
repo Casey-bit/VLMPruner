@@ -3,15 +3,15 @@
 # VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm (CVPR 2026)
 
 **Zhenkai Wu**<sup>1,2</sup><sup>†</sup> &nbsp;
-**Xiaowen Ma**<sup>2</sup><sup>†</sup> &nbsp;
-**Zhenliang Ni**<sup>2</sup><sup>✉</sup>  
+**Xiaowen Ma**<sup>1</sup><sup>†</sup> &nbsp;
+**Zhenliang Ni**<sup>1</sup><sup>✉</sup>  
 
 **Dengming Zhang**<sup>1,2</sup> &nbsp;
-**Han Shu**<sup>2</sup> &nbsp;
-**Xin Jiang**<sup>2</sup> &nbsp;
-**Xinghao Chen**<sup>2</sup><sup>✉</sup>
+**Han Shu**<sup>1</sup> &nbsp;
+**Xin Jiang**<sup>1</sup> &nbsp;
+**Xinghao Chen**<sup>1</sup><sup>✉</sup>
 
-<sup>1</sup> Zhejiang University  <sup>2</sup> Huawei Technologies  
+<sup>1</sup> Huawei Technologies <sup>2</sup> Zhejiang University 
 
 <sup>†</sup> Equal contribution.  
 <sup>✉</sup> Corresponding authors: nizhenliang2@huawei.com; xinghao.chen@huawei.com.
@@ -123,11 +123,13 @@ bash eval_scripts/[Benchmark].sh [Reduction_Ratio] [Similarity_Threshold] [Token
 
 If you are interested in our work, please consider giving a 🌟 and citing our work below. We will update **VLM-Pruner** regularly.
 ```
-@article{wu2025vlm,
-  title={VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm},
-  author={Wu, Zhenkai and Ma, Xiaowen and Ni, Zhenliang and Zhang, Dengming and Shu, Han and Jiang, Xin and Chen, Xinghao},
-  journal={arXiv preprint arXiv:2512.02700},
-  year={2025}
+@InProceedings{Wu_2026_CVPR,
+    author    = {Wu, Zhenkai and Ma, Xiaowen and Ni, Zhenliang and Zhang, Dengming and Shu, Han and Jiang, Xin and Chen, Xinghao},
+    title     = {VLM-Pruner: Buffering for Spatial Sparsity in an Efficient VLM Centrifugal Token Pruning Paradigm},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {31952-31961}
 }
 ```
 
